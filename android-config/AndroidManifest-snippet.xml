@@ -1,0 +1,21 @@
+<!--
+  把以下内容合并到 android/app/src/main/AndroidManifest.xml
+
+  1) 在 <manifest> 根节点下添加权限：
+-->
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+<!--
+  2) 在 <application> 节点内添加 FileProvider：
+  注意把 ${applicationId} 换成你的真实包名，例如 com.example.bms
+-->
+<provider
+    android:name="androidx.core.content.FileProvider"
+    android:authorities="${applicationId}.fileprovider"
+    android:exported="false"
+    android:grantUriPermissions="true">
+    <meta-data
+        android:name="android.support.FILE_PROVIDER_PATHS"
+        android:resource="@xml/file_paths" />
+</provider>
