@@ -13,7 +13,7 @@ class UpdateService {
   // TODO: 改成你自己的 version.json 地址
   // 方式一：raw 直链（简单）
   static const String _versionUrl =
-      'https://raw.githubusercontent.com/你的用户名/flutter-updater/main/version.json';
+      'https://raw.githubusercontent.com/guoyanyan25/flutter-updater/main/version.json';
   // 方式二：GitHub Pages（更稳定，推荐）
   // static const String _versionUrl =
   //     'https://你的用户名.github.io/flutter-updater/version.json';

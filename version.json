@@ -4,7 +4,7 @@
   "min_required_version": "1.0.0",
   "min_required_build_number": 10,
   "force_update": false,
-  "apk_url": "https://github.com/你的用户名/flutter-updater/releases/download/v1.0.0/app-release.apk",
+  "apk_url": "https://github.com/guoyanyan25/flutter-updater/releases/download/v1.0.0/app-release.apk",
   "apk_sha256": "这里填写apk的sha256校验值",
   "release_notes": "1. 首次发布\n2. 支持蓝牙连接BMS主板\n3. 实时显示电压电流温度",
   "check_interval_hours": 24
